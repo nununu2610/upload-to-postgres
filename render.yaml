@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: upload-sql
+    env: python
+    buildCommand: ""
+    startCommand: "python app.py"
+    envVars:
+      - key: DATABASE_URL
+        value: postgresql://project_nt219_user:VobqIdaoKuzi796BhJlIBmjTr5al7YRI@dpg-d1457nvfte5s73e03a60-a/project_nt219
